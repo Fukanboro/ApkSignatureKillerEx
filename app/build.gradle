@@ -5,15 +5,15 @@ plugins {
 android {
     namespace 'bin.mt.test'
     compileSdk 32
-    ndkVersion '24.0.8215888'
+    ndkVersion '21.0.8215888'
 
     defaultConfig {
         applicationId "bin.mt.signature"
         minSdk 21
         //noinspection OldTargetApi
-        targetSdk 32
+        targetSdk 50
         versionCode 1
-        versionName "1.0"
+        versionName "Field X"
         externalNativeBuild {
             cmake {
                 cppFlags ""
@@ -29,7 +29,7 @@ android {
         debug {
             storeFile file("../fake.jks")
             storePassword "123456"
-            keyAlias "key0"
+            keyAlias "Nototpkey"
             keyPassword "123456"
             v1SigningEnabled true
             v2SigningEnabled true
